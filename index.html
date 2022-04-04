@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="calculadora">
+        <section id="section1">
+            <h1>
+                Calculadora
+            </h1>
+        </section>
+
+        <section id="section2">
+            <input type="number" id="valorA" value="" placeholder="Valor A">
+            <input type="number" id="valorB" value="" placeholder="Valor B">
+            <input type="number" id="valorC" value="" placeholder="Valor C">
+        </section>
+
+        <section id="section3">
+            <button onclick="handleBtnCalcular()">
+                Calcular
+            </button>
+            <button onclick="handleBtnClear()">
+                Limpar
+            </button>
+        </section>
+
+        <section id="section4">
+            <ul id="lista-resultados">
+            </ul>
+        </section>
+    </div>
+</body>
+<script>
+    document.getElementById('section4').style.visibility = 'hidden'
+</script>
+<script src="script.js"></script>
+</html>
